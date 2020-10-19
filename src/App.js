@@ -5,6 +5,7 @@ import Navbar from './components/layout/Navbar';
 import About from './components/pages/About';
 import Home from './components/pages/Home';
 import NotFound from './components/pages/NotFound';
+import Character from './components/characters/Character';
 import AlertState from './context/alert/AlertState';
 import PoeLadderState from './context/poeladder/PoeLadderState';
 import './App.css';
@@ -21,6 +22,7 @@ const App = () => {
               <Switch>
                 <Route exact path='/' component={Home} />
                 <Route exact path='/about' component={About} />
+                <Route exact path='/character/:name' component={Character} />
                 <Route component={NotFound} />
               </Switch>
             </div>

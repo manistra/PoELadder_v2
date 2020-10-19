@@ -1,4 +1,5 @@
 import React from 'react';
+import Icon from '../../icon.png';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
@@ -6,7 +7,12 @@ const Navbar = ({ icon, title }) => {
   return (
     <nav className='navbar bg-dark'>
       <h1>
-        <i className={icon} />
+        <img
+          src={Icon}
+          alt=''
+          className='round-img'
+          style={{ width: '40px' }}
+        />
         {title}
       </h1>
       <ul>

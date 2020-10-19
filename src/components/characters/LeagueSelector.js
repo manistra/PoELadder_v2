@@ -17,7 +17,7 @@ const LeagueSelector = () => {
     if (selecetedValue === 'Select a league') {
       alertContext.setAlert('Please select a league', 'light');
     } else {
-      console.log(selecetedValue);
+      poeLadderContext.getCharacters(selecetedValue);
       setText('Select a league');
     }
   };

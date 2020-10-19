@@ -5,6 +5,7 @@ import Characters from '../characters/Characters';
 const Home = () => (
   <Fragment>
     <LeagueSelector />
+    <Characters />
   </Fragment>
 );
 export default Home;

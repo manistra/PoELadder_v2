@@ -1,4 +1,4 @@
-import { GET_LEAGUES } from '../types';
+import { GET_CHARACTERS, GET_LEAGUES } from '../types';
 
 export default (state, action) => {
   switch (action.type) {
@@ -6,6 +6,11 @@ export default (state, action) => {
       return {
         ...state,
         leagues: action.payload,
+      };
+    case GET_CHARACTERS:
+      return {
+        ...state,
+        characters: action.payload,
       };
 
     default:
