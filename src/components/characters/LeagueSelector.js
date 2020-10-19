@@ -14,11 +14,11 @@ const LeagueSelector = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    if (selecetedValue === 'Choose a league') {
+    if (selecetedValue === 'Select a league') {
       alertContext.setAlert('Please select a league', 'light');
     } else {
-      console.log('manistra');
-      setText('Choose a league');
+      console.log(selecetedValue);
+      setText('Select a league');
     }
   };
 
@@ -28,10 +28,11 @@ const LeagueSelector = () => {
 
   return (
     <div>
-      <h1>League selector</h1>
       <form onSubmit={onSubmit} className='form'>
-        <select onChange={onChange}>
-          <option value={selecetedValue}>{selecetedValue}</option>
+        <select defaultValue={selecetedValue} onChange={onChange}>
+          <option hidden value={selecetedValue}>
+            {selecetedValue}
+          </option>
           {poeLadderContext.leagues.map((league) => (
             <option key={league.id} value={league.id}>
               {league.id}

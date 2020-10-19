@@ -1,1 +1,2 @@
-My own project made from scratch using knowledge from the first project of the React Front To Back Course.
+Personal project made by using the knowledge gained from the first project of the React Front To Back Course.
+

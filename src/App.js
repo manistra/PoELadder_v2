@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Alert from './components/layout/Alert';
+import Navbar from './components/layout/Navbar';
 import About from './components/pages/About';
 import Home from './components/pages/Home';
 import NotFound from './components/pages/NotFound';
@@ -14,6 +15,7 @@ const App = () => {
       <PoeLadderState>
         <Router>
           <div className='App'>
+            <Navbar />
             <div className='container'>
               <Alert />
               <Switch>
